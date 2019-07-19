@@ -56,9 +56,7 @@ public class BasicEndPointProcessor implements EndPointProcessor {
     public void deleteEndPoints(Collection<EndPoint> deleteList) {
 
         for (EndPoint endPoint : deleteList) {
-            if (endPoints.contains(endPoint)) {
-                endPoints.remove(endPoint);
-            }
+            endPoints.remove(endPoint);
         }
     }
 

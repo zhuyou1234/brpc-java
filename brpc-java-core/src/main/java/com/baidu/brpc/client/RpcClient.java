@@ -205,8 +205,8 @@ public class RpcClient {
             this.namingService.subscribe(subscribeInfo, new NotifyListener() {
                 @Override
                 public void notify(Collection<EndPoint> addList, Collection<EndPoint> deleteList) {
-                    endPointProcessor.addEndPoints(addList);
                     endPointProcessor.deleteEndPoints(deleteList);
+                    endPointProcessor.addEndPoints(addList);
                 }
             });
         }
